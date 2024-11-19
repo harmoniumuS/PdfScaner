@@ -10,6 +10,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PdfScaner.ViewModels;
 
+
 namespace PdfScaner
 {
     /// <summary>

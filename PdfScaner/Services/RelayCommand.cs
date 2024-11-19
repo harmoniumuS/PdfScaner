@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace PdfScaner
+namespace PdfScaner.Services
 {
-    public class RelayCommand:ICommand
+    public class RelayCommand : ICommand
     {
         private readonly Action _execute;
         private readonly Func<bool> _canExecute;
@@ -25,12 +25,12 @@ namespace PdfScaner
 
         public void Execute(object parameter)
         {
-             _execute();
+            _execute();
         }
         public event EventHandler CanExecuteChanged
         {
             add => CommandManager.RequerySuggested += value;
-            remove=> CommandManager.RequerySuggested -= value;
+            remove => CommandManager.RequerySuggested -= value;
         }
     }
 }
