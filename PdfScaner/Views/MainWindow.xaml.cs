@@ -11,7 +11,7 @@ using System.Windows.Shapes;
 using PdfScaner.ViewModels;
 
 
-namespace PdfScaner
+namespace PdfScaner.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
